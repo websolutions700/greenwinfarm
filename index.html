@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous"></script>
+	<title>Document</title>
+</head>
+<body oncontextmenu="return false" onselectstart="return false" onselect="return false" ondragstart="return false" ondrag="return false">
+	
+	<nav>
+		<p>GreenWin farm's site</p>
+	</nav>
+
+
+	<div class="order-form">
+		
+		<div class="page1">
+			<p class="head">Online order form</p>
+			
+			<form action="" class="categories-select">
+				
+				<b><p class="text">Please select the category for online order form</p></b>
+
+				<input type="radio" name="category" value="page2"><p class="text"  style="display: inline;">Vegetables / भाज्या</p> <br> <br>
+				<input type="radio" name="category" value="page3"> <p class='text' style="display: inline;"> Leafy Vegetables / पालेभाज्या</p> <br> <br>
+				<input type="radio" name="category" value="page4"> <p class='text' style="display: inline;"> Fruits / फळे</p> <br> <br>
+				<input type="radio" name="category" value="page5">  <p class='text' style="display: inline;"> Special Combos / Baskets</p> <br> <br>
+				<input type="radio" name="category" value="page6"> <p class='text' style="display: inline;"> Flowers / फुले</p> <br> <br>
+
+				<div class="controls">
+				
+					<!-- <button class="prev" disabled>BACK</button> -->
+					<button class="next">NEXT</button>
+
+				</div>	
+
+			</form>
+     
+
+
+
+
+		</div>
+
+
+
+		<div class="page2">
+			
+			<p class="page-head">
+					<!-- Leafy Vegetables / पालेभाज्या -->
+					Vegetables / भाज्या
+			</p>
+
+
+			<div class="products">
+				<div class="product">
+					<p class="name">Onion big / कांदा (मोठा)</p>
+					<p class="price">1kg - Rs: 70/-</p>
+					<img src="images/Onion.jpg" alt="">
+					<select name="" id="">
+						<option value="0">choose</option>
+						<option value="70">1kg - RS.70</option>
+						<option value="135">2kg - RS.135</option>
+						<option value="270">4kg - RS.270</option>
+						<option value="340">5kg - RS.340</option>
+					</select>
+				</div>
+
+				<div class="product">
+					<p class="name">Potato / बटाटा</p>
+					<p class="price">1Kg - Rs: 50/-</p>
+					<img src="images/Potato.jpg" alt="">
+					<select name="" id="">
+						<option value="0">choose</option>
+						<option value="50">1kg - RS.50</option>
+						<option value="95">2kg - RS.95</option>
+						<option value="190">4kg - RS.190</option>
+						<option value="240">5kg - RS.240</option>
+					</select>
+				</div>
+
+				<div class="product">
+					<p class="name">Green Chilli / हिरवी मिरची</p>
+					<p class="price">250gm - Rs: 20/-</p>
+					<img src="images/GreenMirchi.jpg" alt="">
+					<select name="" id="">
+						<option value="0">choose</option>
+						<option value="10">100gm - RS.10</option>
+						<option value="20">250gm - RS.20</option>
+						<option value="40">500gm - RS.40</option>
+					</select>
+				</div>
+
+				<div class="product">
+					<p class="name">Ginger / आलं / अदरक</p>
+					<p class="price">250gm - Rs: 25/-</p>
+					<img src="images/ginger.jpg" alt="">
+					<select name="" id="">
+						<option value="0">choose</option>
+						<option value="15">100gm - RS.15</option>
+						<option value="25">250gm - RS.25</option>
+						<option value="50">500gm - RS.50</option>
+					</select>
+				</div>
+
+
+				<div class="product">
+					<p class="name">Garlic / लसूण</p>
+					<p class="price">250gm - Rs: 35/-</p>
+					<img src="images/Garlic_.jpg" alt="">
+					<select name="" id="">
+						<option value="0">choose</option>
+						<option value="35">250gm - RS.35</option>
+						<option value="70">500gm - RS.70</option>
+						<option value="140">1kg - RS.140</option>
+					</select>
+				</div>
+
+				<div class="product">
+					<p class="name">Tomato / टोमॅटो</p>
+					<p class="price">1kg - Rs: 45/-</p>
+					<img src="images/Tomato.jpg" alt="">
+					<select name="" id="">
+						<option value="0">choose</option>
+						<option value="12">250gm - RS.12</option>
+						<option value="23">500gm - RS.23</option>
+						<option value="45">1kg - RS.45</option>
+						<option value="85">2kg - RS.85</option>			
+					</select>
+				</div>
+
+				<div class="product">
+					<p class="name">Cabbage / कोबी</p>
+					<p class="price">Rs.40 per pc</p>
+					<img src="images/cabbage.jpg" alt="">
+					<select name="" id="">
+						<option value="0">choose</option>
+						<option value="40">1</option>
+						<option value="80">2</option>
+						<option value="120">3</option>
+						<option value="160">4</option>
+
+						<!-- <option value="3">5kg - RS.190</option> -->
+					</select>
+				</div>
+
+				<div class="product">
+					<p class="name">Cauliflower / क्वालीफ्लॉवर</p>
+					<p class="price">Rs.50 per pc</p>
+					<img src="images/Cauliflower.jpg" alt="">
+					<select name="" id="">
+						<option value="0">choose</option>
+						<option value="50">1</option>
+						<option value="100">2</option>
+						<option value="150">3</option>
+						<option value="200">4</option>
+						<!-- <option value="3">5kg - RS.190</option> -->
+					</select>
+				</div>
+
+
+				<div class="product">
+					<p class="name">Bottle Gourd / दुधी भोपळा</p>
+					<p class="price">Rs.20 per pc</p>
+					<img src="images/Bottlegourd.jpg" alt="">
+					<select name="" id="">
+						<option value="0">choose</option>
+						<option value="20">1</option>
+						<option value="40">2</option>
+						<option value="60">3</option>
+
+						<!-- <option value="3">5kg - RS.190</option> -->
+					</select>
+				</div>
+
+
+				<div class="product">
+					<p class="name">Ridge Gourd / दोडका</p>
+					<p class="price">250gm - Rs: 15/-</p>
+					<img src="images/RidgeGourd.jpg" alt="">
+					<select name="" id="">
+						<option value="0">choose</option>
+						<option value="15">250gm - RS.15</option>
+						<option value="30">500gm - RS.30</option>
+						<option value="55">1kg - RS.55</option>
+					</select>
+				</div>
+
+
+				<div class="product">
+					<p class="name">Drumstick / शेवगा</p>
+					<p class="price">250gm - Rs: 33/-</p>
+					<img src="images/Drumsticks.jpg" alt="">
+					<select name="" id="">
+						<option value="0">-- out of stock --</option>
+						<!-- <option value="33">250gm - RS.33</option> -->
+						<!-- <option value="66">500gm - RS.66</option> -->
+						<!-- <option value="3">5kg - RS.250</option> -->
+					</select>
+				</div>
+
+				<div class="product">
+					<p class="name">Carrot / गाजर</p>
+					<p class="price">250gm - Rs: 20/-</p>
+					<img src="images/carrot.jpg" alt="">
+					<select name="" id="">
+						<option value="0">choose</option>
+						<option value="20">250gm - RS.20</option>
+						<option value="40">500gm - RS.40</option>
+						<option value="75">1kg - RS.75</option>
+						<option value="145">2kg - RS.145</option>
+						<!-- <option value="3">5kg - RS.250</option> -->
+					</select>
+				</div>
+
+				<div class="product">
+					<p class="name">Cucumber / काकडी</p>
+					<p class="price">250gm - Rs: 15/-</p>
+					<img src="images/Cucumber.jpg" alt="">
+					<select name="" id="">
+						<option value="0">choose</option>
+						<option value="15">250gm - RS.15</option>
+						<option value="30">500gm - RS.30</option>
+						<option value="55">1kg - RS.55</option>
+						<option value="105">2kg - RS.105</option>						<!-- <option value="2">1kg - RS.40</option> -->
+						<!-- <option value="3">5kg - RS.250</option> -->
+					</select>
+				</div>
+
+				<div class="product">
+					<p class="name">Beetroot / बीट</p>
+					<p class="price">250gm - Rs: 42/-</p>
+					<img src="images/beetroot.jpg" alt="">
+					<select name="" id="">
+						<option value="0">-- out of stock --</option>
+						<!-- <option value="42">500gm - RS.42</option>
+						<option value="84">1kg - RS.84</option> -->
+						<!-- <option value="2">1kg - RS.40</option> -->
+						<!-- <option value="3">5kg - RS.250</option> -->
+					</select>
+				</div>
+
+				<div class="product">
+					<p class="name">Lemon / लिंबू</p>
+					<p class="price">5 Pcs - Rs: 10/-</p>
+					<img src="images/Limbu.jpg" alt="">
+					<select name="" id="">
+						<option value="0">choose</option>
+						<option value="10">5</option>
+						<option value="20">10</option>
+						<option value="30">15</option>
+						<option value="40">20</option>
+						<!-- <option value="3">5kg - RS.190</option> -->
+					</select>
+				</div>
+
+				<div class="product">
+					<p class="name">Radish White / मुळा</p>
+					<p class="price">Out of stock</p>
+					<img src="images/radish.jpg" alt="">
+					<select name="" id="">
+						<option value="0">-- out of stock --</option>
+						<!-- <option value="28">1</option>
+						<option value="56">2</option> -->
+						<!-- <option value="3">5kg - RS.190</option> -->
+					</select>
+				</div>
+
+				<div class="product">
+					<p class="name">Lady Finger / भेंडी</p>
+					<p class="price">250gm - Rs: 25/-</p>
+					<img src="images/LadyFinger.jpg" alt="">
+					<select name="" id="">
+						<option value="0">choose</option>
+						<option value="25">250gm - RS. 25</option>
+						<option value="50">500gm - RS. 50</option>
+						<option value="95">1kg - RS. 95</option>
+						<option value="185">1kg - RS. 185</option>	
+					</select>
+				</div>
+
+
+
+				<div class="product">
+					<p class="name">Cluster Beans / गवार</p>
+					<p class="price">250gm - Rs: 25/-</p>
+					<img src="images/Cluster-Beans.jpg" alt="">
+					<select name="" id="">
+						<option value="0">choose</option>
+						<option value="25">250gm - RS. 25</option>
+						<option value="50">500gm - RS. 50</option>
+						<option value="95">1kg - RS. 95</option>
+						<!-- <option value="3">5kg - RS.190</option> -->
+					</select>
+				</div>
+
+
+<!-- 				<div class="product">
+					<p class="name">Green Beans / हिरवा घेवडा</p>
+					<p class="price">Rs.28 per Bunch / जुडी</p>
+					<img src="images/farasbee.jpg" alt="">
+					<select name="" id="">
+						<option value="0">choose</option>
+						<option value="28">250gm - RS. 28</option>
+						<option value="56">500gm - RS. 56</option>
+						<option value="112">1kg - RS. 112</option>
+						<option value="3">5kg - RS.190</option> 
+					</select>
+				</div> -->
+
+
+				<div class="product">
+					<p class="name">Capsicum Green / सिमला मिरची</p>
+					<p class="price">250gm - Rs: 20/-</p>
+					<img src="images/Capsicum.jpg" alt="">
+					<select name="" id="">
+						<option value="0">choose</option>
+						<option value="20">250gm - RS. 20</option>
+						<option value="40">500gm - RS. 40</option>
+						<option value="75">1kg - RS. 75</option>
+						<!-- <option value="3">5kg - RS.190</option> -->
+					</select>
+				</div>
+
+				<div class="product">
+					<p class="name">Brinjal / वांगी</p>
+					<p class="price">250gm - Rs: 20/-</p>
+					<img src="images/Brinjal.jpg" alt="">
+					<select name="" id="">
+						<option value="0">choose</option>
+						<option value="20">250gm - RS. 20</option>
+						<option value="40">500gm - RS. 40</option>
+						<option value="75">1kg - RS. 75</option>
+						<option value="145">2kg - RS.145</option>
+					</select>
+				</div>
+
+
+				<!-- <div class="product">
+					<p class="name">Brinjal Bottle Shape / भरताचे वांगे</p>
+					<p class="price">Rs.10 per pc</p>
+					<img src="images/BottleShapeBrinjal.png" alt="">
+					<select name="" id="">
+						<option value="0">choose</option>
+						<option value="10">1</option>
+						<option value="20">2</option>
+						<option value="30">4</option>
+					</select>
+				</div> -->
+
+
+				<div class="product">
+					<p class="name">Bitter Gourd / कारले</p>
+					<p class="price">250gm - Rs: 20/-</p>
+					<img src="images/Karale.jpg" alt="">
+					<select name="" id="">
+						<option value="0">choose</option>
+						<option value="20">250gm - RS. 20</option>
+						<option value="40">500gm - RS. 40</option>
+						<option value="75">1kg - RS. 75</option>
+						<!-- <option value="3">5kg - RS.190</option> -->
+					</select>
+				</div>
+
+				<!-- <div class="product">
+					<p class="name">Sweet corn / मका / कणीस</p>
+					<p class="price">Rs.20 per two pcs</p>
+					<img src="images/Sweetcorn.jpg" alt="">
+					<select name="" id="">
+						<option value="0">choose</option>
+						<option value="20">1</option>
+						<option value="40">2</option>
+						<option value="3">5kg - RS.190</option>
+					</select>
+				</div> -->
+
+
+				<div class="product">
+					<p class="name">Coconut / नारळ</p>
+					<p class="price">Rs.30 per pc</p>
+					<img src="images/Coconut.jpg" alt="">
+					<select name="" id="">
+						<option value="0">choose</option>
+						<option value="30">1</option>
+						<option value="60">2</option>
+						<option value="90">3</option>
+						<option value="120">4</option>
+						<option value="150">5</option>
+					</select>
+				</div>
+
+
+				<div class="product">
+					<p class="name">Sweet Potato / रताळे</p>
+					<p class="price">500gm - Rs: 30/-</p>
+					<img src="images/SweetPotato.jpeg" alt="">
+					<select name="" id="">
+						<option value="0">choose</option>
+						<!-- <option value="20">250gm - RS. 20</option> -->
+						<option value="30">500gm - RS. 30</option>
+						<option value="60">1kg - RS. 60</option>
+						<option value="115">2kg - RS.115</option>
+					</select>
+				</div>
+
+				<!-- <div class="product">
+					<p class="name">Tindora / तोंडले</p>
+					<p class="price">Rs.28 per Bunch / जुडी</p>
+					<img src="images/tendli.jpg" alt="">
+					<select name="" id="">
+						<option value="0">choose</option>
+						<option value="20">250gm - RS. 20</option>
+						<option value="40">500gm - RS. 40</option>
+						<option value="80">1kg - RS. 80</option>
+						<option value="3">5kg - RS.190</option>
+					</select>
+				</div> -->
+
+
+				<div class="product">
+					<p class="name">Sprouted Moth Beans / मोडाची मटकी</p>
+					<p class="price">250gm - Rs: 30/-</p>
+					<img src="images/modachi.jpg" alt="">
+					<select name="" id="">
+						<option value="0">choose</option>
+						<option value="30">250gm - RS. 30</option>
+						<option value="60">500gm - RS. 60</option>
+						<option value="115">1kg - RS. 115</option>
+						<!-- <option value="3">5kg - RS.190</option> -->
+					</select>
+				</div>
+
+
+				<!-- <div class="product">
+					<p class="name">Radish White / मुळा</p>
+					<p class="price">Rs.28 per Bunch / जुडी</p>
+					<img src="images/radish.jpg" alt="">
+					<select name="" id="">
+						<option value="0">choose</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+
+					</select>
+				</div> -->
+
+
+
+			</div>
+
+			<div class="controls">
+				
+				<button class="prev">BACK</button>
+				<button class="next">NEXT</button>
+
+			</div>	
+
+
+		</div>
+
+		<div class="page3">
+			
+			<p class="page-head">
+					Leafy Vegetables / पालेभाज्या
+			</p>
+
+			
+			
+			<div class="products">
+				<div class="product">
+					<p class="name">Coriander Leaves / कोथिंबीर</p>
+					<p class="price">Rs.15 per Bunch / जुडी</p>
+					<img src="images/Kothimbir.jpg" alt="">
+					<select name="" id="">
+						<option value="0">choose</option>
+						<option value="15">1</option>
+						<option value="30">2</option>
+						<option value="45">3</option>
+						<option value="60">4</option>
+					</select>
+				</div>
+
+
+				<div class="product">
+					<p class="name">Curry Leaves / कडीपत्ता</p>
+					<p class="price">Rs.10 per Bunch / जुडी</p>
+					<img src="images/curryLeave.jpeg" alt="">
+					<select name="" id="">
+						<option value="0">choose</option>
+						<option value="10">1</option>
+						<option value="20">2</option>
+						<option value="30">3</option>
+						<option value="40">4</option>
+					</select>
+				</div>
+
+
+				<div class="product">
+					<p class="name">Spinach / पालक</p>
+					<p class="price">Rs.10 per Bunch / जुडी</p>
+					<img src="images/PALAK.jpg" alt="">
+					<select name="" id="">
+						<option value="0">choose</option>
+						<option value="10">1</option>
+						<option value="20">2</option>
+						<option value="30">3</option>
+						<option value="40">4</option>
+					</select>
+				</div>
+
+				<div class="product">
+					<p class="name">Methi / मेथी</p>
+					<p class="price">Rs.20 per Bunch / जुडी</p>
+					<img src="images/Methi.jpg" alt="">
+					<select name="" id="">
+						<option value="0">choose</option>
+						<option value="20">1</option>
+						<option value="40">2</option>
+						<option value="60">3</option>
+						<option value="80">4</option>
+					</select>
+				</div>
+
+				<!-- <div class="product">
+					<p class="name">Spring Onion / कांदापात</p>
+					<p class="price">Rs.28.8 per Bunch / जुडी</p>
+					<img src="images/SpringOnion.png" alt="">
+					<select name="" id="">
+						<option value="0">choose</option>
+						<option value="28.8">1</option>
+						<option value="57.6">2</option>
+					</select>
+				</div> -->
+
+				<div class="product">
+					<p class="name">Mint Leaves / पुदिना</p>
+					<p class="price">Rs.15 per Bunch / जुडी</p>
+					<img src="images/Pudina.jpg" alt="">
+					<select name="" id="">
+						<option value="0">choose</option>
+						<option value="15">1</option>
+						<option value="30">2</option>
+						<option value="45">3</option>
+						<option value="60">4</option>
+					</select>
+				</div>
+
+				<div class="product">
+					<p class="name">Lemon Grass / गवतीचहा</p>
+					<p class="price">Rs.10 per Bunch / जुडी</p>
+					<img src="images/lemongrasss.jpg" alt="">
+					<select name="" id="">
+						<option value="0">choose</option>
+						<option value="10">1</option>
+						<option value="20">2</option>
+						<option value="30">3</option>
+						<option value="40">4</option>
+					</select>
+				</div>
+
+				<div class="product">
+					<p class="name">Dill / शेपू</p>
+					<p class="price">Rs.15 per Bunch / जुडी</p>
+					<img src="images/shepu.jpg" alt="">
+					<select name="" id="">
+						<option value="0">choose</option>
+						<option value="15">1</option>
+						<option value="30">2</option>
+						<option value="45">3</option>
+						<option value="60">4</option>
+					</select>
+				</div>
+
+				<div class="product">
+					<p class="name">Rajgeera Bhaji / राजगीरा भाजी</p>
+					<p class="price">Rs.15 per Bunch / जुडी</p>
+					<img src="images/rajgeera2.jpg" alt="">
+					<select name="" id="">
+						<option value="0">choose</option>
+						<option value="15">1</option>
+						<option value="30">2</option>
+						<option value="45">3</option>
+						<option value="60">4</option>
+					</select>
+				</div>
+
+
+
+			</div>
+
+
+			<div class="controls">
+				
+				<button class="prev">BACK</button>
+				<button class="next">NEXT</button>
+
+			</div>		
+
+
+		</div>
+
+		<div class="page4">
+			
+			<p class="head">Fruits</p>
+
+			<div class="products">
+				<div class="product">
+					<p class="name">Apple Red Delicious / सफरचंद</p>
+					<p class="price">Rs.70 per pack of Three</p>
+					<img src="images/apple.jpg" alt="">
+					<select name="" id="">
+						<option value="0">choose</option>
+						<option value="70">1 packet - RS. 70</option>
+						<option value="140">2 packet - RS. 140</option>
+						<option value="205">3 packet - RS. 205</option>
+						<option value="270">4 packet - RS. 270</option>
+
+					</select>
+				</div>
+
+				<div class="product">
+					<p class="name">Guava / पेरू</p>
+					<p class="price">Rs.35 per pack of Three</p>
+					<img src="images/Guava.jpg" alt="">
+					<select name="" id="">
+						<option value="0">choose</option>
+						<option value="35">1 packet - RS. 35</option>
+						<option value="65">2 packet - RS. 65</option>
+						<option value="100">3 packet - RS. 100</option>
+						<option value="140">4 packet - RS. 140</option>
+
+					</select>
+				</div>
+
+
+
+
+				<div class="product">
+					<p class="name">Banana / केळी</p>
+					<p class="price">Rs.50 per Dozen</p>
+					<img src="images/banana.jpg" alt="">
+					<select name="" id="">
+						<option value="0">choose</option>
+						<option value="25">Half dozen - RS. 25</option>
+						<option value="50">One dozen - RS. 50</option>
+
+					</select>
+				</div>
+
+				<!-- <div class="product">
+					<p class="name">Custurd Apple / सिताफळ</p>
+					<p class="price">Rs.80 per pack of Three</p>
+					<img src="images/sitafal.jpg" alt="">
+					<select name="" id="">
+						<option value="0">choose</option>
+						<option value="80">1</option>
+						<option value="160">2</option>
+
+					</select>
+				</div> -->
+
+				<div class="product">
+					<p class="name">Papaya / पपई</p>
+					<p class="price">Rs.35 per pc</p>
+					<img src="images/papaya.jpg" alt="">
+					<select name="" id="">
+						<option value="0">choose</option>
+						<option value="35">1</option>
+						<option value="70">2</option>
+						<option value="105">3</option>
+						<option value="140">4</option>
+					</select>
+				</div>
+
+
+
+				<div class="product">
+					<p class="name">Sweet Lime / मोसंबी</p>
+					<p class="price">Rs.45/- per pack of Three</p>
+					<img src="images/Mosambi.jpg" alt="">
+					<select name="" id="">
+						<option value="0">choose</option>
+						<option value="45">1 packet - RS. 45</option>
+						<option value="85">2 packet - RS. 85</option>
+						<option value="130">3 packet - RS. 130</option>
+						<option value="170">4 packet - RS. 170</option>
+
+					</select>
+				</div>
+
+
+			</div>
+
+			<div class="controls">
+				
+				<button class="prev">BACK</button>
+				<button class="next">NEXT</button>
+
+			</div>	
+
+
+		</div>
+
+		<div class="page5">
+			<p class="head">Special Combos / Baskets</p>
+
+			<div class="products">
+				<div class="product">
+					<p class="name">Value Pack Combo- (Rs.295 per packet)</p>
+					<p class="price">Onion 2 kg, Potato 2 kg, Ginger 250 gm, Garlic 250 gm</p>
+					<img src="images/combo1.jpg" alt="">
+					<select name="" id="">
+						<option value="0">choose</option>
+						<option value="295">1 packet - RS. 295</option>
+						<option value="590">2 packet - RS. 590</option>
+
+					</select>
+				</div>
+
+				<div class="product">
+					<p class="name">Mini Veggi Combo - (Rs.260 per packet)</p>
+					<p class="price">Onion 1 kg, Potato 1 kg, Ginger 100 gm, Tomato 500 gm, Green Chilli 100 gm, Lady Finger 250 gm, Brinjal 250 gm, Coriander Leaves 1 Bunch, Cucumber 250 gm, Palak / Dill 1 Bunch, Lemon 2 Nos., Curry Leaves 1 Bunch</p>
+					<img src="images/combo2.jpg" alt="">
+					<select name="" id="">
+						<option value="0">choose</option>
+						<option value="260">1 packet - RS. 260</option>
+						<option value="500">2 packet - RS. 500</option>
+
+					</select>
+				</div>
+
+				<div class="product">
+					<p class="name">Mega Veggi Combo - (Rs.460 per packet)</p>
+					<p class="price">Onion 1 kg, Potato 1 kg, Ginger 250 gm, Garlic 250 gm, Tomato 500 gm, Green Chilli 250 gm, Lady Finger 250 gm, Brinjal 250 gm, Cabbage 1 Unit, Cauliflower 1 Unit, Gavar 250 gm, Coriander Leaves 1 Bunch, Cucumber 250 gm, Shepu/Methi/Palak any 2, Lemon 6 Nos., Curry Leaves 1 Bunch,</p>
+					<img src="images/combo3.png" alt="">
+					<select name="" id="">
+						<option value="0">choose</option>
+						<option value="490">1 packet - RS. 490</option>
+						<option value="910">2 packet - RS. 910</option>
+
+					</select>
+				</div>
+
+				
+
+
+			</div>
+
+			<div class="controls">
+				
+				<button class="prev">BACK</button>
+				<button class="next">NEXT</button>
+
+			</div>	
+		</div>
+
+		<div class="page6">
+			
+
+
+			<p class="head">Special Combos / Baskets</p>
+
+			<div class="products">
+				<div class="product">
+					<p class="name">Marigold / झेंडू</p>
+					<p class="price">-- out of stock --</p>
+					<!-- <img src="images/combo1.jpg" alt=""> -->
+					<select name="" id="">
+						<option value="0">-- out of stock --</option>
+						<!-- <option value="295">1 packet - RS. 295</option>
+						<option value="590">2 packet - RS. 590</option>
+ -->
+					</select>
+				</div>
+
+
+
+			</div>
+
+			<div class="controls">
+				
+				<button class="prev">BACK</button>
+				<button class="next">NEXT</button>
+
+			</div>	
+
+
+
+		</div>
+
+		<div class="page7">
+			
+			<p class="head">Place you order</p>
+			<p class="text">Please review your order carefully before submitting it for processing.</p>
+
+			<table>
+				
+			</table>
+
+			<p class="total">
+				Order amount <span>RS.000</span>
+			</p>
+
+			<p class="head">Contact and delivery details</p>
+
+			<div class="form">
+				<p>Name <br> <input class="username" type="text" /></p>
+				<p>Phone <br> <input value="+91 " class="phone" type="phone" /></p>
+				<p>Email <br> <input class="mailin" type="email" /></p>
+				
+			</div>	
+			<p class="delivery">Delivery details <br> <input class='deliveryin' type="text" /></p>
+
+			<br><br>
+
+			<p class="head">Delivery Date and Time</p>
+
+			<p class="text">Next Day Delivery for Orders received before 6pm. Delivery Time 3:00pm to 8:00pm</p>
+
+			
+			<div class="checkout">
+				Proceed to pay <span>0000</span>
+			</div>
+
+			<div class="place">
+				Place order on COD 			</div>
+
+		</div>
+
+
+
+	</div>
+
+
+
+	<script type="text/javascript" src="index.js"></script>
+<!-- <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+ -->
+</body>
+</html>

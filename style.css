@@ -1,0 +1,303 @@
+body {
+	background: #eee;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+nav {
+	height: 10vmin;
+	width: 100%;
+	text-align: left;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #fff;
+	font-size: 4vmin;
+	line-height:10vmin;
+}
+
+nav p {
+	margin-top: 0;
+	/* position: absolute; */
+	/* top: 0; */
+	/* background: #000; */
+	text-indent: 5vmin;
+	color: #777;
+	font-family: sans-serif;
+}
+
+.order-form {
+	margin-top: 20vmin;
+	background: #FFF;
+	padding: 4vmin;
+	border-radius: 2vmin;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100vmin;
+	padding-right: 5vmin;
+	padding-left: 5vmin;
+}
+
+.order-form p.head {
+	font-size: 4vmin;
+	color: #000;
+}
+
+.order-form p.text {
+	color: #444;
+	font-family: sans-serif;
+	font-size: 2vmin;
+}
+
+
+.order-form p.page-head {
+	margin-top: 9vmin;
+	font-size: 3.6vmin;
+	color: #666;
+}
+
+
+.order-form .products {
+	margin-top: 5vmin;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	width: 90%;
+
+}
+
+.order-form .products .product {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 38vmin;
+	min-height: 50vmin;
+	margin-top: 5vmin;
+	padding-left: 1vmin;
+	padding-right:1vmin;
+	margin-left: 5vmin;
+	background: #fff;
+	border-radius: 2vmin;
+	box-shadow: 0 1vmin 1vmin #2223;
+}
+
+.order-form .products .product .name {
+	font-family: sans-serif;
+	font-size: 2.6vmin;
+}
+
+.order-form .products .product .price {
+	font-size: 2vmin;
+	font-family: sans-serif;
+	color: #555;
+}
+
+.order-form .products .product img {
+	height: 20vmin;
+}
+
+.order-form .products .product select {
+	width:20vmin;
+	margin-top: 3vmin;
+	margin-bottom: 2vmin;
+	height: 3vmin;
+	font-size: 2.1vmin;
+	text-indent: .5vmin;
+	text-align: center;
+}
+
+
+.order-form .controls {
+	width: 90%;
+	margin-top: 5vmin;
+	margin-left: 5vmin;
+	height: 5vmin;
+}
+
+.order-form .controls button {
+	height: 5vmin;
+	width: 10vmin;
+	margin-right: 1vmin;
+	outline: none;
+	border: none;
+	border-radius: 1vmin;
+
+}
+
+
+.order-form .controls button.next {
+	background: #0f5;
+	color: #fff;
+	font-weight: bold;
+
+}
+
+
+.order-form .controls button.prev {
+	background: #777;
+	color: #fff;
+}
+
+.order-form .controls button:disabled {
+	display: none;
+}
+
+.page2, .page3, .page4, .page5, .page6, .page7{
+	display: none;
+}
+
+/* 
+.page4 .name {
+	font-size: 2.6vmin;
+	padding: 3vmin;
+}
+
+.page4 .products {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr)
+}
+
+.page4 .products .product {
+	width: 90vmin;
+} */
+
+
+
+
+.page7 table {
+	width: 100%;
+}
+
+.page7 table tr.head {
+	font-size:2.2vmin;
+	font-family: sans-serif;
+	color:#fff;
+}
+
+.page7 table tr {
+	font-size: 2vmin;
+	text-align: center;
+	height: 4vmin;
+	background: #eee; 
+}
+
+.page7 table tr td {
+	padding-top: .4vmin;
+	padding-bottom: .4vmin;
+	color: #222;
+}
+
+.page7 table tr:nth-of-type(odd) {
+	background: #ddd;
+}
+
+.page7 .form {
+	width: 100%;
+	grid-column-gap: 3vmin;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.page7 input {
+	margin-top: .5vmin;
+	width:30vmin;
+	height: 3vmin;
+}
+
+
+
+
+.page7 .form p, .page7 .delivery {
+	font-size: 3vmin;
+}
+
+
+.page7 .delivery input {
+	width: 100%;
+	height: 6vmin;
+}
+
+.page7 .total {
+	font-weight: bold;
+	color: #444; 
+	margin-bottom: 6vmin;
+	margin-top: 4vmin;
+	font-size: 3.4vmin;
+}
+
+
+.page7 .total span {
+	float: right;
+}
+
+.page7 .checkout, .page7 .place{
+	width: 30vmin;
+	height: 7vmin;
+	background: #ff7400;
+	color: #fff;
+	font-size: 3vmin;
+	text-align: center;
+	line-height: 7vmin;
+	margin-top: 8vmin;
+	margin-left: 50%;
+	-webkit-transform: translate(-50%);
+	   -moz-transform: translate(-50%);
+	    -ms-transform: translate(-50%);
+	     -o-transform: translate(-50%);
+	        transform: translate(-50%);
+}
+
+
+
+.page7 .checkout:hover, .page7 .place:hover {
+	background: #0f5;
+}
+
+
+
+@media (orientation: portrait) {
+	body {
+		font-size: 3vmin;
+	}
+	.order-form {
+		width: 90vmin;
+	}
+	input {
+		font-size: 3vmin;
+	}
+	.order-form .products .product .name {
+		font-size: 3.2vmin;
+	}
+
+	.order-form .products .product .price {
+		font-size: 3vmin;
+	}
+
+	.order-form .controls button {
+		height: 6vmin;
+		width: 16vmin;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
